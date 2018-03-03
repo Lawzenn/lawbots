@@ -3,20 +3,20 @@ const Discord = require('discord.js');
 
 var bot = new Discord.Client();
 var prefix = ("/");
-  
-bot.on('ready', () => {
+
+  bot.on('ready', () => {
     bot.user.setPresence({ game: { name: '/help ByLawzenn ©', type: 0} });
     console.log("Je suis connecté !");
 });
 
 bot.login('NDE3MjY4NzIzNzA0MTM1Njgw.DXuE1w.gZQ2XW4alBbMNuw-gtvrDoegcwE');
 
-
 bot.on('message', message => {
     if (message.content === '/ping'){
         message.reply("pong !");
         console.log('ping pong')
 };
+
 
   if (message.content === prefix + "help"){
       var help_embed = new Discord.RichEmbed()
@@ -81,4 +81,3 @@ bot.on('message', message => {
                   }
             
     });
-
