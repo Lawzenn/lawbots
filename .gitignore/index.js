@@ -3,7 +3,6 @@ const Discord = require('discord.js');
 
 var bot = new Discord.Client();
 var prefix = ("/");
-var dispatcher;
   
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name: '/help ByLawzenn ©', type: 0} });
@@ -17,9 +16,6 @@ bot.on('message', message => {
         message.reply("pong !");
         console.log('ping pong')
 };
-
-
-
 
   if (message.content === prefix + "help"){
       var help_embed = new Discord.RichEmbed()
