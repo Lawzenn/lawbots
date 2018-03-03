@@ -9,7 +9,7 @@ bot.on('ready', () => {
     console.log("Je suis connecté !");
 });
 
-bot.login('NDE3MjY4NzIzNzA0MTM1Njgw.DXuEaw.rt5_ebbUJaCHAHD_DcQPngSsoGM');
+bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
